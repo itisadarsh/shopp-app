@@ -12,8 +12,8 @@ const Item=({data})=>{
         dispatch(remove(data.id));
     }
     return(<div className="flex gap-2 h-auto">
-        <img src={data.image}  className="w-[35%] h-[35%]" />
-        <div className="flex flex-col gap-4 justify-evenly">
+        <img src={data.image}  className="w-[35%] h-[35%]" alt=""/>
+        <div className="flex flex-col gap-4 justify-evenly" >
             <p className="font-bold  line-clamp-2">{data.title}</p>
             <p>{data.description.split(" ").slice(1,20).join(" ")+"..."}</p>
             <div>

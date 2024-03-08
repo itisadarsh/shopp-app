@@ -5,7 +5,7 @@ import Product from "./Product";
 
 const Home=()=>{
 
-   const url=" https://fakestoreapi.com/products"
+   const url="https://fakestoreapi.com/products";
     const[loading,setLoading]=useState(true);
     const[posts,setPosts]=useState([]);
 
@@ -35,7 +35,7 @@ const Home=()=>{
          
          posts.length===0?<div>No Products</div>:
         
-      <div className="product flex justify-evenly gap-y-4 p-6 flex-wrap w-screen  ">{
+      <div className="product flex justify-evenly gap-y-4 p-6 flex-wrap w-screen">{
         posts.data.map(data=>{
           return <Product key={data.id} data={data}/>
         })
